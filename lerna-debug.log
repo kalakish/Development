@@ -1,0 +1,376 @@
+0 silly argv {
+0 silly argv   _: [ 'bootstrap' ],
+0 silly argv   lernaVersion: '6.6.2',
+0 silly argv   '$0': 'node_modules/.bin/lerna'
+0 silly argv }
+1 notice cli v6.6.2
+2 verbose rootPath /workspaces/Development
+3 warn EWORKSPACES Workspaces exist in the root package.json, but Lerna is not configured to use them.
+3 warn EWORKSPACES To fix this and have Lerna use workspaces to resolve packages, set `useWorkspaces: true` in lerna.json.
+4 verbose hoist using globs ["**"]
+5 silly npmConfig {
+5 silly npmConfig   registry: undefined,
+5 silly npmConfig   npmClient: 'npm',
+5 silly npmConfig   npmClientArgs: [],
+5 silly npmConfig   mutex: undefined
+5 silly npmConfig }
+6 info Bootstrapping 10 packages
+7 verbose lifecycle preinstall
+8 silly lifecycle No script for "preinstall" in "@nova/compiler", continuing
+9 silly lifecycle No script for "preinstall" in "@nova/core", continuing
+10 silly lifecycle No script for "preinstall" in "@nova/metadata", continuing
+11 silly lifecycle No script for "preinstall" in "@nova/orm", continuing
+12 silly lifecycle No script for "preinstall" in "@nova/integration", continuing
+13 silly lifecycle No script for "preinstall" in "@nova/reporting", continuing
+14 silly lifecycle No script for "preinstall" in "@nova/security", continuing
+15 silly lifecycle No script for "preinstall" in "@nova/ui", continuing
+16 silly lifecycle No script for "preinstall" in "@nova-app/runtime", continuing
+17 silly lifecycle No script for "preinstall" in "@nova-app/studio", continuing
+18 warn EHOIST_ROOT_VERSION The repository root depends on typescript@^5.4.5, which differs from the more common typescript@^5.0.0.
+19 warn EHOIST_PKG_VERSION "@nova-app/studio" package depends on typescript@^5.0.0, which differs from the hoisted typescript@^5.4.5.
+20 warn EHOIST_PKG_VERSION "@nova/core" package depends on express@^4.18.2, which differs from the hoisted express@^4.18.0.
+21 warn EHOIST_PKG_VERSION "@nova/core" package depends on mssql@^9.1.1, which differs from the hoisted mssql@^10.0.0.
+22 warn EHOIST_PKG_VERSION "@nova/core" package depends on redis@^4.6.10, which differs from the hoisted redis@^4.6.0.
+23 silly hasDependencyInstalled nova-framework lerna
+24 silly hasDependencyInstalled nova-framework typescript
+25 silly hasDependencyInstalled nova-framework jest
+26 silly hasDependencyInstalled nova-framework @types/jest
+27 silly hasDependencyInstalled nova-framework ts-jest
+28 silly hasDependencyInstalled nova-framework eslint
+29 silly hasDependencyInstalled nova-framework prettier
+30 silly hasDependencyInstalled nova-framework @types/express
+31 silly hasDependencyInstalled nova-framework @types/cors
+32 silly hasDependencyInstalled nova-framework @types/compression
+33 silly hasDependencyInstalled nova-framework nodemon
+34 silly hasDependencyInstalled nova-framework ts-node
+35 silly hasDependencyInstalled nova-framework @nova/core
+36 silly hasDependencyInstalled nova-framework @nova/compiler
+37 silly hasDependencyInstalled nova-framework express-rate-limit
+38 silly hasDependencyInstalled nova-framework @types/express-rate-limit
+39 silly hasDependencyInstalled nova-framework express
+40 silly hasDependencyInstalled nova-framework cors
+41 silly hasDependencyInstalled nova-framework helmet
+42 silly hasDependencyInstalled nova-framework compression
+43 silly hasDependencyInstalled nova-framework dotenv
+44 silly hasDependencyInstalled nova-framework winston
+45 silly hasDependencyInstalled nova-framework socket.io
+46 silly hasDependencyInstalled nova-framework pg
+47 silly hasDependencyInstalled nova-framework ioredis
+48 silly hasDependencyInstalled nova-framework @bull-board/api
+49 silly hasDependencyInstalled nova-framework @bull-board/express
+50 silly hasDependencyInstalled nova-framework bullmq
+51 silly hasDependencyInstalled nova-framework @types/react
+52 silly hasDependencyInstalled nova-framework @types/react-dom
+53 silly hasDependencyInstalled nova-framework @vitejs/plugin-react
+54 silly hasDependencyInstalled nova-framework vite
+55 silly hasDependencyInstalled nova-framework @types/node
+56 silly hasDependencyInstalled nova-framework @emotion/react
+57 silly hasDependencyInstalled nova-framework @emotion/styled
+58 silly hasDependencyInstalled nova-framework @mui/material
+59 silly hasDependencyInstalled nova-framework @mui/icons-material
+60 silly hasDependencyInstalled nova-framework @mui/x-data-grid
+61 silly hasDependencyInstalled nova-framework @mui/x-date-pickers
+62 silly hasDependencyInstalled nova-framework @monaco-editor/react
+63 silly hasDependencyInstalled nova-framework react
+64 silly hasDependencyInstalled nova-framework react-dom
+65 silly hasDependencyInstalled nova-framework react-router-dom
+66 silly hasDependencyInstalled nova-framework react-query
+67 silly hasDependencyInstalled nova-framework socket.io-client
+68 silly hasDependencyInstalled nova-framework axios
+69 silly hasDependencyInstalled nova-framework formik
+70 silly hasDependencyInstalled nova-framework yup
+71 silly hasDependencyInstalled nova-framework date-fns
+72 silly hasDependencyInstalled nova-framework recharts
+73 silly hasDependencyInstalled nova-framework pegjs
+74 silly hasDependencyInstalled nova-framework mssql
+75 silly hasDependencyInstalled nova-framework redis
+76 silly hasDependencyInstalled nova-framework @types/multer
+77 silly hasDependencyInstalled nova-framework @types/ws
+78 silly hasDependencyInstalled nova-framework @types/amqplib
+79 silly hasDependencyInstalled nova-framework @types/kafka-node
+80 silly hasDependencyInstalled nova-framework xml2js
+81 silly hasDependencyInstalled nova-framework csv-parse
+82 silly hasDependencyInstalled nova-framework csv-stringify
+83 silly hasDependencyInstalled nova-framework multer
+84 silly hasDependencyInstalled nova-framework ws
+85 silly hasDependencyInstalled nova-framework swagger-ui-express
+86 silly hasDependencyInstalled nova-framework swagger-jsdoc
+87 silly hasDependencyInstalled nova-framework graphql
+88 silly hasDependencyInstalled nova-framework graphql-tools
+89 silly hasDependencyInstalled nova-framework amqplib
+90 silly hasDependencyInstalled nova-framework kafka-node
+91 silly hasDependencyInstalled nova-framework @types/semver
+92 silly hasDependencyInstalled nova-framework semver
+93 silly hasDependencyInstalled nova-framework tedious
+94 silly hasDependencyInstalled nova-framework @types/uuid
+95 silly hasDependencyInstalled nova-framework uuid
+96 silly hasDependencyInstalled nova-framework @types/nodemailer
+97 silly hasDependencyInstalled nova-framework @types/pdfkit
+98 silly hasDependencyInstalled nova-framework @types/handlebars
+99 silly hasDependencyInstalled nova-framework exceljs
+100 silly hasDependencyInstalled nova-framework pdfkit
+101 silly hasDependencyInstalled nova-framework jspdf
+102 silly hasDependencyInstalled nova-framework jspdf-autotable
+103 silly hasDependencyInstalled nova-framework csv-writer
+104 silly hasDependencyInstalled nova-framework yaml
+105 silly hasDependencyInstalled nova-framework nodemailer
+106 silly hasDependencyInstalled nova-framework chart.js
+107 silly hasDependencyInstalled nova-framework handlebars
+108 silly hasDependencyInstalled nova-framework @types/bcrypt
+109 silly hasDependencyInstalled nova-framework @types/jsonwebtoken
+110 silly hasDependencyInstalled nova-framework bcrypt
+111 silly hasDependencyInstalled nova-framework jsonwebtoken
+112 silly hasDependencyInstalled @nova-app/studio typescript
+113 silly hasDependencyInstalled @nova/core express
+114 silly hasDependencyInstalled @nova/core mssql
+115 silly hasDependencyInstalled @nova/core redis
+116 silly root dependencies {}
+117 silly leaf dependencies {}
+118 info Installing external dependencies
+119 verbose actions 4 actions, concurrency 2
+120 info hoist Installing hoisted dependencies into root
+121 silly npmInstallDependencies nova-framework [
+121 silly npmInstallDependencies   'lerna@^6.6.2',
+121 silly npmInstallDependencies   'typescript@^5.4.5',
+121 silly npmInstallDependencies   'jest@^29.7.0',
+121 silly npmInstallDependencies   '@types/jest@^29.5.12',
+121 silly npmInstallDependencies   'ts-jest@^29.1.2',
+121 silly npmInstallDependencies   'eslint@^8.57.0',
+121 silly npmInstallDependencies   'prettier@^3.2.5',
+121 silly npmInstallDependencies   '@types/express@^4.17.17',
+121 silly npmInstallDependencies   '@types/cors@^2.8.13',
+121 silly npmInstallDependencies   '@types/compression@^1.7.2',
+121 silly npmInstallDependencies   'nodemon@^3.0.0',
+121 silly npmInstallDependencies   'ts-node@^10.9.0',
+121 silly npmInstallDependencies   '@nova/core@^2.0.0',
+121 silly npmInstallDependencies   '@nova/compiler@^2.0.0',
+121 silly npmInstallDependencies   'express-rate-limit@^7.1.0',
+121 silly npmInstallDependencies   '@types/express-rate-limit@^6.0.0',
+121 silly npmInstallDependencies   'express@^4.18.0',
+121 silly npmInstallDependencies   'cors@^2.8.5',
+121 silly npmInstallDependencies   'helmet@^7.0.0',
+121 silly npmInstallDependencies   'compression@^1.7.4',
+121 silly npmInstallDependencies   'dotenv@^16.0.0',
+121 silly npmInstallDependencies   'winston@^3.10.0',
+121 silly npmInstallDependencies   'socket.io@^4.6.0',
+121 silly npmInstallDependencies   'pg@^8.11.0',
+121 silly npmInstallDependencies   'ioredis@^5.3.0',
+121 silly npmInstallDependencies   '@bull-board/api@^5.0.0',
+121 silly npmInstallDependencies   '@bull-board/express@^5.0.0',
+121 silly npmInstallDependencies   'bullmq@^5.0.0',
+121 silly npmInstallDependencies   '@types/react@^18.2.0',
+121 silly npmInstallDependencies   '@types/react-dom@^18.2.0',
+121 silly npmInstallDependencies   '@vitejs/plugin-react@^4.0.0',
+121 silly npmInstallDependencies   'vite@^4.4.0',
+121 silly npmInstallDependencies   '@types/node@^20.0.0',
+121 silly npmInstallDependencies   '@emotion/react@^11.11.0',
+121 silly npmInstallDependencies   '@emotion/styled@^11.11.0',
+121 silly npmInstallDependencies   '@mui/material@^5.14.0',
+121 silly npmInstallDependencies   '@mui/icons-material@^5.14.0',
+121 silly npmInstallDependencies   '@mui/x-data-grid@^6.0.0',
+121 silly npmInstallDependencies   '@mui/x-date-pickers@^6.0.0',
+121 silly npmInstallDependencies   '@monaco-editor/react@^4.5.0',
+121 silly npmInstallDependencies   'react@^18.2.0',
+121 silly npmInstallDependencies   'react-dom@^18.2.0',
+121 silly npmInstallDependencies   'react-router-dom@^6.14.0',
+121 silly npmInstallDependencies   'react-query@^3.39.0',
+121 silly npmInstallDependencies   'socket.io-client@^4.6.0',
+121 silly npmInstallDependencies   'axios@^1.6.0',
+121 silly npmInstallDependencies   'formik@^2.4.0',
+121 silly npmInstallDependencies   'yup@^1.2.0',
+121 silly npmInstallDependencies   'date-fns@^2.30.0',
+121 silly npmInstallDependencies   'recharts@^2.7.0',
+121 silly npmInstallDependencies   'pegjs@^0.10.0',
+121 silly npmInstallDependencies   'mssql@^10.0.0',
+121 silly npmInstallDependencies   'redis@^4.6.0',
+121 silly npmInstallDependencies   '@types/multer@^1.4.7',
+121 silly npmInstallDependencies   '@types/ws@^8.5.5',
+121 silly npmInstallDependencies   '@types/amqplib@^0.10.1',
+121 silly npmInstallDependencies   '@types/kafka-node@^2.0.0',
+121 silly npmInstallDependencies   'xml2js@^0.6.0',
+121 silly npmInstallDependencies   'csv-parse@^5.5.0',
+121 silly npmInstallDependencies   'csv-stringify@^6.4.0',
+121 silly npmInstallDependencies   'multer@^1.4.5-lts.2',
+121 silly npmInstallDependencies   'ws@^8.14.0',
+121 silly npmInstallDependencies   'swagger-ui-express@^5.0.0',
+121 silly npmInstallDependencies   'swagger-jsdoc@^6.2.0',
+121 silly npmInstallDependencies   'graphql@^16.8.0',
+121 silly npmInstallDependencies   'graphql-tools@^9.0.0',
+121 silly npmInstallDependencies   'amqplib@^0.10.0',
+121 silly npmInstallDependencies   'kafka-node@^5.0.0',
+121 silly npmInstallDependencies   '@types/semver@^7.5.0',
+121 silly npmInstallDependencies   'semver@^7.5.0',
+121 silly npmInstallDependencies   'tedious@^16.0.0',
+121 silly npmInstallDependencies   '@types/uuid@^9.0.0',
+121 silly npmInstallDependencies   'uuid@^9.0.0',
+121 silly npmInstallDependencies   '@types/nodemailer@^6.4.0',
+121 silly npmInstallDependencies   '@types/pdfkit@^0.13.0',
+121 silly npmInstallDependencies   '@types/handlebars@^4.1.0',
+121 silly npmInstallDependencies   'exceljs@^4.4.0',
+121 silly npmInstallDependencies   'pdfkit@^0.14.0',
+121 silly npmInstallDependencies   'jspdf@^2.5.0',
+121 silly npmInstallDependencies   'jspdf-autotable@^3.5.0',
+121 silly npmInstallDependencies   'csv-writer@^1.6.0',
+121 silly npmInstallDependencies   'yaml@^2.3.0',
+121 silly npmInstallDependencies   'nodemailer@^6.9.0',
+121 silly npmInstallDependencies   'chart.js@^4.4.0',
+121 silly npmInstallDependencies   'handlebars@^4.7.0',
+121 silly npmInstallDependencies   '@types/bcrypt@^5.0.0',
+121 silly npmInstallDependencies   '@types/jsonwebtoken@^9.0.0',
+121 silly npmInstallDependencies   'bcrypt@^5.1.0',
+121 silly npmInstallDependencies   'jsonwebtoken@^9.0.0'
+121 silly npmInstallDependencies ]
+122 silly npmInstallDependencies backup /workspaces/Development/package.json
+123 info hoist Pruning hoisted dependencies
+124 silly prune [
+124 silly prune   '/workspaces/Development/packages/compiler/node_modules/typescript',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/@types/express',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/@types/cors',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/@types/compression',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/nodemon',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/ts-node',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/@nova/core',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/@nova/core',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/@nova/core',
+124 silly prune   '/workspaces/Development/packages/reporting/node_modules/@nova/core',
+124 silly prune   '/workspaces/Development/packages/security/node_modules/@nova/core',
+124 silly prune   '/workspaces/Development/packages/ui/node_modules/@nova/core',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/@nova/compiler',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/@nova/compiler',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/express-rate-limit',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/@types/express-rate-limit',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/express',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/express',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/cors',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/helmet',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/compression',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/dotenv',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/winston',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/socket.io',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/socket.io',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/pg',
+124 silly prune   '/workspaces/Development/packages/metadata/node_modules/pg',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/ioredis',
+124 silly prune   '/workspaces/Development/packages/security/node_modules/ioredis',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/@bull-board/api',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/@bull-board/express',
+124 silly prune   '/workspaces/Development/apps/runtime/node_modules/bullmq',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/@types/react',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/@types/react-dom',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/@vitejs/plugin-react',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/vite',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/@types/node',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/@types/node',
+124 silly prune   '/workspaces/Development/packages/metadata/node_modules/@types/node',
+124 silly prune   '/workspaces/Development/packages/orm/node_modules/@types/node',
+124 silly prune   '/workspaces/Development/packages/reporting/node_modules/@types/node',
+124 silly prune   '/workspaces/Development/packages/security/node_modules/@types/node',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/@emotion/react',
+124 silly prune   '/workspaces/Development/packages/ui/node_modules/@emotion/react',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/@emotion/styled',
+124 silly prune   '/workspaces/Development/packages/ui/node_modules/@emotion/styled',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/@mui/material',
+124 silly prune   '/workspaces/Development/packages/ui/node_modules/@mui/material',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/@mui/icons-material',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/@mui/x-data-grid',
+124 silly prune   '/workspaces/Development/packages/ui/node_modules/@mui/x-data-grid',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/@mui/x-date-pickers',
+124 silly prune   '/workspaces/Development/packages/ui/node_modules/@mui/x-date-pickers',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/@monaco-editor/react',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/react',
+124 silly prune   '/workspaces/Development/packages/ui/node_modules/react',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/react-dom',
+124 silly prune   '/workspaces/Development/packages/ui/node_modules/react-dom',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/react-router-dom',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/react-query',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/socket.io-client',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/socket.io-client',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/axios',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/axios',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/formik',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/yup',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/date-fns',
+124 silly prune   '/workspaces/Development/apps/studio/node_modules/recharts',
+124 silly prune   '/workspaces/Development/packages/compiler/node_modules/pegjs',
+124 silly prune   '/workspaces/Development/packages/metadata/node_modules/mssql',
+124 silly prune   '/workspaces/Development/packages/orm/node_modules/mssql',
+124 silly prune   '/workspaces/Development/packages/metadata/node_modules/redis',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/@types/multer',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/@types/ws',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/@types/amqplib',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/@types/kafka-node',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/xml2js',
+124 silly prune   '/workspaces/Development/packages/reporting/node_modules/xml2js',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/csv-parse',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/csv-stringify',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/multer',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/ws',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/swagger-ui-express',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/swagger-jsdoc',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/graphql',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/graphql-tools',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/amqplib',
+124 silly prune   '/workspaces/Development/packages/integration/node_modules/kafka-node',
+124 silly prune   '/workspaces/Development/packages/metadata/node_modules/@types/semver',
+124 silly prune   '/workspaces/Development/packages/metadata/node_modules/semver',
+124 silly prune   '/workspaces/Development/packages/metadata/node_modules/tedious',
+124 silly prune   '/workspaces/Development/packages/orm/node_modules/tedious',
+124 silly prune   '/workspaces/Development/packages/orm/node_modules/@types/uuid',
+124 silly prune   '/workspaces/Development/packages/reporting/node_modules/@types/uuid',
+124 silly prune   '/workspaces/Development/packages/orm/node_modules/uuid',
+124 silly prune   '/workspaces/Development/packages/reporting/node_modules/uuid',
+124 silly prune   '/workspaces/Development/packages/reporting/node_modules/@types/nodemailer',
+124 silly prune   '/workspaces/Development/packages/reporting/node_modules/@types/pdfkit',
+124 silly prune   '/workspaces/Development/packages/reporting/node_modules/@types/handlebars',
+124 silly prune   '/workspaces/Development/packages/reporting/node_modules/exceljs',
+124 silly prune   ... 12 more items
+124 silly prune ]
+125 silly rimrafDir /workspaces/Development/packages/compiler/node_modules/typescript
+126 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/@types/express
+127 verbose prune /workspaces/Development/packages/compiler/node_modules/typescript
+128 verbose prune /workspaces/Development/apps/runtime/node_modules/@types/express
+129 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/@types/cors
+130 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/@types/compression
+131 verbose prune /workspaces/Development/apps/runtime/node_modules/@types/cors
+132 verbose prune /workspaces/Development/apps/runtime/node_modules/@types/compression
+133 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/nodemon
+134 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/ts-node
+135 verbose prune /workspaces/Development/apps/runtime/node_modules/nodemon
+136 verbose prune /workspaces/Development/apps/runtime/node_modules/ts-node
+137 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/@nova/core
+138 silly rimrafDir /workspaces/Development/apps/studio/node_modules/@nova/core
+139 verbose prune /workspaces/Development/apps/runtime/node_modules/@nova/core
+140 verbose prune /workspaces/Development/apps/studio/node_modules/@nova/core
+141 silly rimrafDir /workspaces/Development/packages/integration/node_modules/@nova/core
+142 silly rimrafDir /workspaces/Development/packages/reporting/node_modules/@nova/core
+143 verbose prune /workspaces/Development/packages/integration/node_modules/@nova/core
+144 verbose prune /workspaces/Development/packages/reporting/node_modules/@nova/core
+145 silly rimrafDir /workspaces/Development/packages/security/node_modules/@nova/core
+146 silly rimrafDir /workspaces/Development/packages/ui/node_modules/@nova/core
+147 verbose prune /workspaces/Development/packages/security/node_modules/@nova/core
+148 verbose prune /workspaces/Development/packages/ui/node_modules/@nova/core
+149 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/@nova/compiler
+150 silly rimrafDir /workspaces/Development/apps/studio/node_modules/@nova/compiler
+151 verbose prune /workspaces/Development/apps/runtime/node_modules/@nova/compiler
+152 verbose prune /workspaces/Development/apps/studio/node_modules/@nova/compiler
+153 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/express-rate-limit
+154 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/@types/express-rate-limit
+155 verbose prune /workspaces/Development/apps/runtime/node_modules/express-rate-limit
+156 verbose prune /workspaces/Development/apps/runtime/node_modules/@types/express-rate-limit
+157 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/express
+158 silly rimrafDir /workspaces/Development/packages/integration/node_modules/express
+159 verbose prune /workspaces/Development/apps/runtime/node_modules/express
+160 verbose prune /workspaces/Development/packages/integration/node_modules/express
+161 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/cors
+162 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/helmet
+163 verbose prune /workspaces/Development/apps/runtime/node_modules/cors
+164 verbose prune /workspaces/Development/apps/runtime/node_modules/helmet
+165 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/compression
+166 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/dotenv
+167 verbose prune /workspaces/Development/apps/runtime/node_modules/compression
+168 silly rimrafDir /workspaces/Development/apps/runtime/node_modules/winston
+169 verbose prune /workspaces/Development/apps/runtime/node_modules/winston
+170 error AssertionError [ERR_ASSERTION]: rimraf: callback function required
+170 error     at rimraf (/workspaces/Development/node_modules/rimraf/rimraf.js:56:10)
+170 error     at rimrafDir (/workspaces/Development/node_modules/@lerna/legacy-package-management/dist/index.js:3575:56)
+170 error     at concurrency (/workspaces/Development/node_modules/@lerna/legacy-package-management/dist/index.js:4371:42)
