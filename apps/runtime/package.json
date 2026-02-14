@@ -1,0 +1,48 @@
+{
+  "name": "@nova-app/runtime",
+  "version": "2.0.0",
+  "description": "NOVA Framework Runtime Server Application",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "start": "node dist/server.js",
+    "start:prod": "NODE_ENV=production node dist/server.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src --ext .ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@nova/core": "^2.0.0",
+    "@nova/compiler": "^2.0.0",
+    "@nova/metadata": "^2.0.0",
+    "@nova/orm": "^2.0.0",
+    "@nova/security": "^2.0.0",
+    "@nova/ui": "^2.0.0",
+    "@nova/reporting": "^2.0.0",
+    "@nova/integration": "^2.0.0",
+    "express-rate-limit": "^7.1.0",
+    "@types/compression": "^1.7.2",
+    "@types/express-rate-limit": "^6.0.0",
+    "express": "^4.18.0",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4",
+    "dotenv": "^16.0.0",
+    "winston": "^3.10.0",
+    "socket.io": "^4.6.0",
+    "pg": "^8.11.0",
+    "ioredis": "^5.3.0",
+    "@bull-board/api": "^5.0.0",
+    "@bull-board/express": "^5.0.0",
+    "bullmq": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/cors": "^2.8.13",
+    "@types/compression": "^1.7.2",
+    "nodemon": "^3.0.0",
+    "ts-node": "^10.9.0"
+  }
+}

@@ -1,0 +1,48 @@
+export declare class EnvironmentConfig {
+    private env;
+    constructor();
+    getNodeEnv(): string;
+    isDevelopment(): boolean;
+    isProduction(): boolean;
+    isTest(): boolean;
+    getPort(): number;
+    getHost(): string;
+    getApiUrl(): string;
+    getClientUrl(): string;
+    getDbHost(): string;
+    getDbPort(): number;
+    getDbName(): string;
+    getDbUser(): string;
+    getDbPassword(): string;
+    getDbPoolSize(): number;
+    getDbEncrypt(): boolean;
+    getDbTrustServerCertificate(): boolean;
+    getRedisHost(): string;
+    getRedisPort(): number;
+    getRedisPassword(): string;
+    getRedisDb(): number;
+    getJwtSecret(): string;
+    getJwtExpiry(): string;
+    getBcryptRounds(): number;
+    getSessionTimeout(): number;
+    getLogLevel(): string;
+    getLogPath(): string;
+    getSmtpHost(): string;
+    getSmtpPort(): number;
+    getSmtpSecure(): boolean;
+    getSmtpUser(): string;
+    getSmtpPassword(): string;
+    getEmailFrom(): string;
+    getStoragePath(): string;
+    getUploadPath(): string;
+    getTempPath(): string;
+    getCacheProvider(): 'memory' | 'redis' | 'hybrid';
+    getCacheTTL(): number;
+    getCacheMaxSize(): number;
+    isFeatureEnabled(feature: string): boolean;
+    getServiceUrl(service: string): string;
+    getServiceApiKey(service: string): string;
+    getAll(): Record<string, string | undefined>;
+    getMasked(): Record<string, string>;
+}
+//# sourceMappingURL=environment-config.d.ts.map

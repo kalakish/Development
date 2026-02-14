@@ -1,0 +1,46 @@
+{
+  "name": "@nova/compiler",
+  "version": "2.0.0",
+  "description": "NOVA Framework AL-like Language Compiler",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src --ext .ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@nova/core": "^2.0.0",
+    "@nova/metadata": "^2.0.0",
+    "commander": "^11.0.0",
+    "chalk": "^4.1.2",
+    "fs-extra": "^11.1.0",
+    "glob": "^10.3.0",
+    "ora": "^5.4.0",
+    "pegjs": "^0.10.0",
+    "source-map": "^0.7.4"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.0",
+    "@types/ora": "^3.2.0",
+    "@types/pegjs": "^0.10.0",
+    "@types/node": "^20.0.0"
+  },
+  "bin": {
+    "novac": "./dist/cli.js"
+  },
+  "keywords": [
+    "compiler",
+    "al-language",
+    "parser",
+    "code-generator"
+  ]
+}

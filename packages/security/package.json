@@ -1,0 +1,39 @@
+{
+  "name": "@nova/security",
+  "version": "2.0.0",
+  "description": "NOVA Framework Security & Authorization Layer",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src --ext .ts",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@nova/core": "^2.0.0",
+    "@nova/orm": "^2.0.0",
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "^9.0.0",
+    "ioredis": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/jsonwebtoken": "^9.0.0"
+  },
+  "keywords": [
+    "security",
+    "authentication",
+    "authorization",
+    "permissions",
+    "audit"
+  ]
+}
