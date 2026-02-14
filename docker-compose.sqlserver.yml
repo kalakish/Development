@@ -1,0 +1,101 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: nova-sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=${SQL_PASSWORD:-pass@word1}
+      - MSSQL_PID=Developer
+      - MSSQL_AGENT_ENABLED=true
+      - MSSQL_TCP_PORT=1433
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver_data:/var/opt/mssql
+      - ./docker/sqlserver/init:/docker-entrypoint-initdb.d
+    networks:
+      - nova-network
+    healthcheck:
+      test: /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P ${SQL_PASSWORD:-pass@word1} -Q "SELECT 1" || exit 1
+      interval: 10s
+      timeout: 3s
+      retries: 10
+      start_period: 30s
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: nova-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - nova-network
+    restart: unless-stopped
+
+  runtime:
+    build:
+      context: .
+      dockerfile: docker/runtime/Dockerfile
+    container_name: nova-runtime
+    environment:
+      - NODE_ENV=production
+      - SQL_SERVER=DESKTOP-FLN7TSF\SQLEXPRESS
+      - SQL_PORT=1433
+      - SQL_DATABASE=${SQL_DATABASE:-NOVA_DB}
+      - SQL_USER=sa
+      - SQL_PASSWORD=${SQL_PASSWORD:-pass@word1}
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+      - JWT_SECRET=${JWT_SECRET:-kalariya-kishan}
+    ports:
+      - "3000:3000"
+    depends_on:
+      sqlserver:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    networks:
+      - nova-network
+    restart: unless-stopped
+
+  studio:
+    build:
+      context: .
+      dockerfile: docker/studio/Dockerfile
+    container_name: nova-studio
+    environment:
+      - NODE_ENV=production
+      - REACT_APP_API_URL=http://runtime:3000
+    ports:
+      - "3001:3001"
+    depends_on:
+      - runtime
+    networks:
+      - nova-network
+    restart: unless-stopped
+
+  azure-data-studio:
+    image: crudprod/azure-data-studio:latest
+    container_name: azure-data-studio
+    environment:
+      - DISPLAY=:0
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    ports:
+      - "8080:8080"
+    networks:
+      - nova-network
+    profiles:
+      - tools
+
+volumes:
+  sqlserver_data:
+  redis_data:
+
+networks:
+  nova-network:
+    driver: bridge
