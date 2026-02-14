@@ -1,26 +1,19 @@
 {
   "name": "@nova/metadata",
-  "version": "2.0.0",
-  "description": "NOVA Framework Metadata Management System",
+  "version": "1.0.0",
+  "description": "Metadata Repository for NOVA Framework",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -b",
-    "dev": "tsc -b --watch",
-    "clean": "tsc -b --clean && rm -rf dist",
+    "build": "tsc",
     "test": "jest",
-    "lint": "eslint src --ext .ts"
+    "clean": "rimraf dist"
   },
   "dependencies": {
-    "pg": "^8.11.0",
-    "redis": "^4.6.0",
-    "semver": "^7.5.0",
-    "mssql": "^10.0.0",
-    "tedious": "^16.0.0"
+    "@nova/core": "^1.0.0"
   },
   "devDependencies": {
-    "@types/semver": "^7.5.0",
-    "@types/node": "^20.0.0"
-  },
-  "keywords": ["metadata", "repository", "schema"]
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.5"
+  }
 }

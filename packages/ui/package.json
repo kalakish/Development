@@ -1,43 +1,27 @@
 {
   "name": "@nova/ui",
-  "version": "2.0.0",
-  "description": "NOVA Framework UI Rendering Engine",
+  "version": "1.0.0",
+  "description": "UI Framework for NOVA",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch",
     "test": "jest",
-    "test:coverage": "jest --coverage",
-    "lint": "eslint src --ext .ts,.tsx",
-    "clean": "rm -rf dist"
+    "clean": "rimraf dist"
   },
   "dependencies": {
-    "@nova/core": "^2.0.0",
-    "@nova/orm": "^2.0.0",
-    "@mui/material": "^5.14.0",
-    "@mui/x-data-grid": "^6.0.0",
-    "@mui/x-date-pickers": "^6.0.0",
+    "@nova/core": "^1.0.0",
+    "@nova/metadata": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "@mui/material": "^5.15.0",
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0"
   },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@types/node": "^20.0.0"    
-  },
-  "keywords": [
-    "ui",
-    "pages",
-    "controls",
-    "react",
-    "mui"
-  ]
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.5"
+  }
 }

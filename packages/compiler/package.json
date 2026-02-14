@@ -7,10 +7,14 @@
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "clean": "rm -rf dist"
+    "clean": "rimraf dist"
   },
   "dependencies": {
-    "pegjs": "^0.10.0",
+    "pegjs": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/pegjs": "^0.10.3",
+    "rimraf": "^5.0.5",
     "typescript": "^5.4.5"
   }
 }

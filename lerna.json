@@ -1,10 +1,12 @@
 {
   "version": "1.0.0",
   "npmClient": "npm",
+  "useWorkspaces": true,
   "packages": ["packages/*", "apps/*"],
   "command": {
     "bootstrap": {
-      "hoist": true
+      "hoist": true,
+      "npmClientArgs": ["--no-package-lock"]
     },
     "run": {
       "stream": true

@@ -9,8 +9,9 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
-    "clean": "lerna clean",
-    "test": "lerna run test"
+    "clean": "lerna clean && rm -rf node_modules",
+    "test": "lerna run test",
+    "start:studio": "cd apps/studio && npm start"
   },
   "devDependencies": {
     "lerna": "^6.6.2",
@@ -19,6 +20,7 @@
     "@types/jest": "^29.5.12",
     "ts-jest": "^29.1.2",
     "eslint": "^8.57.0",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5"
   }
 }

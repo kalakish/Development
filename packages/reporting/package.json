@@ -1,49 +1,23 @@
 {
   "name": "@nova/reporting",
-  "version": "2.0.0",
-  "description": "NOVA Framework Reporting Engine",
+  "version": "1.0.0",
+  "description": "Reporting Engine for NOVA",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src",
-    "README.md"
-  ],
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch",
     "test": "jest",
-    "test:coverage": "jest --coverage",
-    "lint": "eslint src --ext .ts",
-    "clean": "rm -rf dist"
+    "clean": "rimraf dist"
   },
   "dependencies": {
-    "@nova/core": "^2.0.0",
-    "@nova/orm": "^2.0.0",
-    "exceljs": "^4.4.0",
+    "@nova/core": "^1.0.0",
+    "@nova/orm": "^1.0.0",
     "pdfkit": "^0.14.0",
-    "jspdf": "^2.5.0",
-    "jspdf-autotable": "^3.5.0",
-    "csv-writer": "^1.6.0",
-    "xml2js": "^0.6.0",
-    "yaml": "^2.3.0",
-    "nodemailer": "^6.9.0",
-    "uuid": "^9.0.0",
-    "chart.js": "^4.4.0",
-    "handlebars": "^4.7.0"
+    "exceljs": "^4.4.0"
   },
   "devDependencies": {
-    "@types/nodemailer": "^6.4.0",
     "@types/pdfkit": "^0.13.0",
-    "@types/uuid": "^9.0.0",
-    "@types/handlebars": "^4.1.0",
-    "@types/node": "^20.0.0"
-  },
-  "keywords": [
-    "reporting",
-    "export",
-    "pdf",
-    "excel",
-    "csv"
-  ]
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.5"
+  }
 }
