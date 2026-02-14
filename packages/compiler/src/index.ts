@@ -1,6 +1,7 @@
 export class ALCompiler {
-  compile(source: string): any {
-    console.log("Compiling AL source...");
-    return { success: true };
+  compile(source: string) {
+    return { success: true, messages: [] };
   }
 }
+
+export default ALCompiler;
